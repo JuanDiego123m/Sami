@@ -1,0 +1,201 @@
+section.login{    
+	align-items: center;
+    display: flex;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-blanco-hexagono-tecnologia-azul_1017-19366.jpg?w=740&t=st=1681330551~exp=1681331151~hmac=1e725729df73bdf8e2a00d2770269b74eab673645a26bb9bfe3c97b8e9e0a575");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+    font-size: 12px;
+    margin:0;
+    justify-content: center;
+    position: relative;
+    padding:0;
+    height: 100vh;    
+}
+
+.box-form {    
+	margin: 10%;
+	width: 80%;	
+	background: #FFFFFF;
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+	flex: 1 1 100%;
+    align-items: stretch;
+	justify-content: space-between;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);	
+}
+	
+@media screen and (max-width: 980px) {
+    
+    .box-form{
+        
+        flex-flow: wrap;
+    	text-align: center;
+    	align-content: center;
+    	align-items: center;
+    	margin-top: 20px;
+	    margin-bottom: 20px;
+        
+    }
+	
+}
+	
+.box-form div{height: auto;}
+	
+.leftLogin{
+	color: #FFF	;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url();
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+@media (max-width: 450px) {
+	.leftLogin{
+		display: none;
+	}
+}
+
+
+/*overlay*/
+.overlay {
+	padding: 30px;
+	width: 100%;
+	height: 100%;
+	/*background: #5961f9ad;*/
+	background: #1dcaff;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.leftLogin h1{
+	font-size: 4em;
+	line-height: 1;
+	font-weight: 900;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.leftLogin span p {
+	margin-top: 30px; font-weight: 900;
+	
+}
+
+.leftLogin span a{
+    
+    color: #fff;
+	text-decoration: none;
+
+}
+
+
+.rightLogin {
+    padding: 40px;
+	padding-top: 80px;
+	overflow: hidden;
+	position: relative;
+	width: 60%;
+}
+
+@media (max-width: 980px) {
+    
+    .rightLogin{
+        
+        width: 100%;
+        
+    }
+    
+}
+
+.rightLogin h5{
+    
+	font-size: 3em;
+	line-height: 0;
+	margin-bottom: 100px;
+
+}
+
+.rightLogin p{font-size: 14px; color: #B0B3B9;}
+
+.rightLogin.inputs{overflow: hidden;}
+
+.rightLogin input{
+	width: 100%;
+	padding: 10px;
+	margin-top: 25px;
+	font-size: 14px;
+	border: none;
+	outline: none;
+	
+}
+
+.rightLogin.remember-me--forget-password {
+	    
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.rightLogin.remember-me--forget-password input{
+	margin: 0;
+	margin-right: 7px;
+	width: auto;
+}
+
+.rightLogin button {
+
+	color:#fff;
+	font-size: 16px;
+	padding: 12px 35px;
+	border-radius: 50px;
+	display: inline-block;
+	border: 0; outline: 0;
+    box-shadow: 0px 4px 20px 0px #B3B3B3;
+	background: #00B5FF;
+}
+
+.login label {
+
+	display: block;
+	position: relative;
+	margin-left: 30px;
+}
+
+.login label::before{
+	content:' \f00c';
+	position: absolute;
+	font-family: FontAwesome;
+	background: #00B5FF;
+
+	border: 3px solid #70F570;
+	border-radius: 4px;
+	color: #00B5FF;
+	left: -30px;
+	
+	transition: all 0.2s linear;
+}
+
+.login label:hover::before{
+	 font-family: FontAwesome;
+	content:' \f00c';
+	color: #000000;
+	cursor: pointer;
+	background: #70F570;
+}
+
+.login label:hover::before .text-checkbox{background: #70F570;}
+.login label span.text-checkbox:hover{background: #70F570;}
+
+.login label span.text-checkbox {
+	display: inline-block;
+	height: auto;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+.login label input[type="checkbox"] {display: none;}

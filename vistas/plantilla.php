@@ -1,0 +1,232 @@
+<?php
+
+session_start();
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>SAMI | SBPO</title>
+
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="icon" href="vistas/img/plantilla/logo-mini.png">
+
+   <!--=====================================
+  PLUGINS DE CSS
+  ======================================-->
+
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="vistas/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> -->
+
+  <!-- <link rel="stylesheet" href="vistas/bower_components/bootstrap/dist/css/style.css"> -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="vistas/bower_components/font-awesome/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="vistas/bower_components/Ionicons/css/ionicons.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="vistas/dist/css/AdminLTE.css">
+  
+  <!-- AdminLTE Skins -->
+  <link rel="stylesheet" href="vistas/dist/css/skins/_all-skins.min.css">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
+
+  <link rel="stylesheet" href="vistas/plugins/iCheck/all.css">
+
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="vistas/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+
+  
+
+  <!--=====================================
+  PLUGINS DE JAVASCRIPT
+  ======================================-->
+
+  <!-- jQuery 3 -->
+  <script src="vistas/bower_components/jquery/dist/jquery.min.js"></script>
+  
+  <!-- Bootstrap 3.3.7 -->
+  <script src="vistas/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- FastClick -->
+  <script src="vistas/bower_components/fastclick/lib/fastclick.js"></script>
+  
+  <!-- AdminLTE App -->
+  <script src="vistas/dist/js/adminlte.min.js"></script>
+
+  <!-- DataTables -->
+  <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
+  <script src="vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
+
+  <!-- CKEditor -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+
+  <!-- SweetAlert 2 -->
+
+  <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
+
+  <!-- iCheck 1.0.1 -->
+  <script src="vistas/plugins/iCheck/icheck.min.js"></script>
+
+  <!-- InputMask -->
+  <script src="vistas/plugins/input-mask/jquery.inputmask.js"></script>
+  <script src="vistas/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+  <script src="vistas/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+    <!-- jQuery Number -->
+  <script src="vistas/plugins/jqueryNumber/jquerynumber.min.js"></script>
+
+  <!-- daterangepicker http://www.daterangepicker.com/-->
+  <script src="vistas/bower_components/moment/min/moment.min.js"></script>
+  <script src="vistas/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+  <script src="vistas/bower_components/libs/ckeditor/ckeditor.js"></script>
+
+  <!-- Morris.js charts http://morrisjs.github.io/morris.js/-->
+  <script src="vistas/bower_components/raphael/raphael.min.js"></script>
+  <script src="vistas/bower_components/morris.js/morris.min.js"></script>
+
+  <!-- ChartJS http://www.chartjs.org/-->
+  <script src="vistas/bower_components/Chart.js/Chart.js"></script>
+  
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+
+  <!-- SELECT2 -->
+  <link href="vistas/plugins/select2-4.1/dist/css/select2.min.css" rel="stylesheet">
+  <script src="vistas/plugins/select2-4.1/dist/js/select2.min.js"></script>
+
+  <!-- FPDF -->
+  <link href="vistas/plugins/select2-4.1/dist/css/select2.min.css" rel="stylesheet">
+  <script src="vistas/plugins/select2-4.1/dist/js/select2.min.js"></script>
+
+  <!--ICONS --> 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- css personalziado -->
+  <link rel="stylesheet" href="vistas/bower_components/css/style.css">
+
+  <!-- GRAFICO -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+
+</head>
+
+<!--=====================================
+CUERPO DOCUMENTO
+======================================-->
+
+<body style="font-family: 'sans-serif', sans-serif;">
+ 
+  <?php
+
+  if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
+      
+    echo '<div id="content">';
+
+        /*=============================================
+        MENU
+        =============================================*/
+        
+        include "modulos/cabezote.php";
+
+        /*=============================================
+        CONTENIDO
+        =============================================*/
+        echo '<div class="">';
+    
+    
+            if(isset($_GET["ruta"])){
+        
+              if($_GET["ruta"] == "inicio" ||
+                 $_GET["ruta"] == "usuarios" ||
+                 $_GET["ruta"] == "empleados" ||
+                 $_GET["ruta"] == "editar-empleados" ||
+                 $_GET["ruta"] == "operaciones" ||
+                 $_GET["ruta"] == "editar-operaciones" ||
+                 $_GET["ruta"] == "DID" ||
+                 $_GET["ruta"] == "clientes" ||
+                 $_GET["ruta"] == "editar-cliente" ||
+                 $_GET["ruta"] == "inventario" ||
+                 $_GET["ruta"] == "editar-inventario" ||
+                 $_GET["ruta"] == "grafico" ||
+                 $_GET["ruta"] == "crear-malla" ||
+                 $_GET["ruta"] == "malla" ||
+                 $_GET["ruta"] == "DID" ||
+                 $_GET["ruta"] == "editar-DID" ||
+                 $_GET["ruta"] == "crear-acta" ||
+                 $_GET["ruta"] == "acta" ||
+                 $_GET["ruta"] == "acta-2" ||
+                 $_GET["ruta"] == "salir"){
+        
+                include "modulos/".$_GET["ruta"].".php";
+        
+              }else{
+        
+                include "modulos/404.php";
+        
+              }
+        
+            }else{
+        
+              include "modulos/inicio.php";
+        
+            }
+
+            /*=============================================
+            FOOTER
+            =============================================*/
+        
+            //include "modulos/footer.php";
+
+        echo '</div>';
+
+    echo '</div>';
+
+  }else{
+
+    include "modulos/login.php";
+
+  }
+
+  ?>
+
+<script src="vistas/js/plantilla.js"></script>
+<script src="vistas/js/usuarios.js"></script>
+<script src="vistas/js/clientes.js"></script>
+<script src="vistas/js/inventario.js"></script>
+<script src="vistas/js/empleados.js"></script>
+<script src="vistas/js/operaciones.js"></script>
+<script src="vistas/js/DID.js"></script>
+<script src="vistas/js/acta.js"></script>
+<script src="vistas/js/grafico.js"></script>
+
+</body>
+</html>
